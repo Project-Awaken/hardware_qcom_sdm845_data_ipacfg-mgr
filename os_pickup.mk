@@ -1,6 +1,4 @@
-ifeq ($(PRODUCT_PLATFORM),sdm845)
-ifneq ($(BUILD_WITHOUT_VENDOR), true)
+ifneq ($(filter sdm845 sdm710,$(TARGET_BOARD_PLATFORM)),)
 LOCAL_PATH := $(call my-dir)
 include $(call first-makefiles-under,$(LOCAL_PATH))
-endif
 endif
