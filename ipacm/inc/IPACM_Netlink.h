@@ -51,6 +51,8 @@ extern "C"
 #include <pthread.h>
 #include <sys/select.h>
 #include <sys/socket.h>
+#include <inaddr.h>
+#define sockaddr_storage __kernel_sockaddr_storage
 #include <linux/socket.h>
 #include <linux/if.h>
 #include <linux/if_addr.h>
